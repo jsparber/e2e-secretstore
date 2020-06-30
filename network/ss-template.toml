@@ -1,0 +1,37 @@
+[parity]
+chain = "dev"
+base_path = "db.TEMPLATE_NAME"
+
+[ui]
+disable = true
+
+[rpc]
+disable = true
+
+[ipc]
+disable = true
+
+[websockets]
+disable = true
+
+[network]
+port = TEMPLATE_PORT #30301
+
+[snapshots]
+disable_periodic = true
+
+#Secret store nodes need an unlocked account to sign messages with
+[account]
+password = ["TEMPLATE_NAME.pwd"]
+
+[secretstore]
+#TEMPLATE_ACCOUNT
+disable = false
+disable_http = TEMPLATE_HTTP #Only one SS needs http false, This node will expose a Secret Store HTTP API
+http_interface = "local"  # The HTTP API is available locally only
+http_port = 8010          # The Secret Store HTTP API is available at this port
+server_set_contract = "none"
+interface = "all"
+port = TEMPLATE_SS_PORT #8011 port used to communicated with other Secret Store nodes
+path = "db.TEMPLATE_NAME/secretstore"
+acl_contract = "none"

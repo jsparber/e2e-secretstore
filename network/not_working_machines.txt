@@ -1,0 +1,6 @@
+# Not responding to ssh
+mercedes.cs.unibo.it
+abigaille.cs.unibo.it
+
+#Unknown error
+amonasro.cs.unibo.it
